@@ -1,0 +1,209 @@
+.logo {
+	font-size: 50px;
+	font-weight: 800;
+	float:left;
+	font-family: courier;
+	color:#0099FF
+}
+
+header {
+   display: inline;
+}
+
+.menu {
+	float: left;
+}
+
+nav {
+	width: 100%;
+	margin:auto;
+	display: flex;
+	line-height: 80px;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	background:#FFFFFF;
+	z-index: 1; /* buat task barnya ga ilang pas di scroll */
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+}
+
+nav ul li {
+	float : left;
+}
+
+nav ul li a {
+	color : black;
+	font-weight: bold;
+	text-align : center;
+	padding: 0px 16px 0px 16px;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	text-decoration:underline;
+}
+
+body {
+   font-family: sans-serif;
+   padding: 0;
+   margin: 0;
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+
+#content {
+  	float: left;
+  	width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+}
+
+.profile-img {
+	width: 200px;
+	object-position: center;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   	border-radius: 5px;
+   	padding: 20px;
+   	margin-top: 20px;
+}	
+
+table {
+	text-align:left;
+	padding: 0px 20px 0px 40px;
+}
+ 
+footer {
+	padding: 20px;
+	background-color: #666666;
+	text-align:center;
+	font-weight:bold;
+}
+
+.container {
+	display: flex;
+}
+
+.box {
+	flex-grow: 1;
+}
+
+.box-2 {
+	flex-grow: 2;
+}
+
+ab1 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	float: right;
+	padding-top: 100px;
+}
+
+.form {
+	border: 0;
+	padding: 5px 0px 5px 0px;
+}
+
+.label{
+	padding-bottom: 10px;
+}
+.input-box {
+	border: 10;
+	padding: 2px 0px 2px 0px;
+}
+
+.flex-container-column {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.flex-container-row {
+	display: flex;
+	flex-basis: 25%;
+	flex-direction: row;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 40px;
+}
+
+p1 {
+	font: Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	font-size:20px;
+	font-style:italic;
+	padding-top: 5px;
+}
+
+@media screen and (max-width: 1000px) {	
+	.container, .box, .box-2{
+		display: block;
+		width: 100%;
+    	padding: 0;
+		float:none;
+	}
+	
+	#content, aside, .form {
+		width: 100%;
+    	padding: 0;
+		float:none;
+  	}
+	
+	
+	.logo {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	
+	nav .menu {
+		width: 100%;
+		margin: 0;
+	}
+	
+	nav .menu ul {
+		text-align: center;
+		margin: auto;
+		line-height: 60px;
+	}
+	
+	nav .menu ul li {
+		display:run-in;
+		float: none;
+	}
+	
+	section {
+		display: block;
+	}
+	
+	section img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	
+	.flex-container-column, .flex-container-row, .p1 {
+		display: block;
+		float:none;
+	}
+	
+	p1 {
+		display:block;
+	}
+}
